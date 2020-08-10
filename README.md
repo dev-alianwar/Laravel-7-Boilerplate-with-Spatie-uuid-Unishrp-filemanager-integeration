@@ -38,8 +38,7 @@ with
 
 9. After Storage linking my application is working fine. You may change lmf.php 
  Optional - If you are using it on a server and root directory is public_html instead of public. Then go to Config/lfm.php 
-Change 'base_directory' => 'public_html'
-- [Unisharp/filemanager/config](https://unisharp.github.io/laravel-filemanager/config).
+Change 'base_directory' => 'public_html'. Check configuration option on [Unisharp/filemanager/config](https://unisharp.github.io/laravel-filemanager/config).
 
 ## Help 
 Further you can get help from these documentation links.
