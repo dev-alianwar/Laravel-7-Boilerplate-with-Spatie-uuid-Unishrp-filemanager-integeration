@@ -13,11 +13,15 @@ Many developer find it hard to use the following packages all together. For me i
 
 
 ## Installation 
-1. clone or download the reporsitory 
-2. Run commands "composer dump-autoload" and "composer install"
-3. Go to your .env file and configure databse settings and APP_URL
-4. Run commands "npm install" and "npm run dev"
+1. clone or download the reporsitory and go into it. 
 
+2. Run commands "composer dump-autoload" and "composer install"
+
+3. Go to your .env file and configure databse settings and APP_URL
+
+4. Run these commands "composer require laravel/ui" and "php artisan ui vue --auth"
+
+5. Run commands "npm install" and "npm run dev".
 
 6. Run commands "php artisan:migrate" and "php artisan db:seed". You can create super admin in the seeders.
 
