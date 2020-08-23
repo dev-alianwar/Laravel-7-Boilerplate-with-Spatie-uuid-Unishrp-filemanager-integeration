@@ -39,18 +39,28 @@ composer require laravel/ui
 php artisan ui vue --auth
 ```
 
-6. Run commands "npm install" and "npm run dev".
-```
-npm install
 
-npm run dev
-```
-7. Run commands "php artisan:migrate" and "php artisan db:seed". You can create super admin in the seeders.
+6. Run commands "php artisan:migrate" and "php artisan db:seed". You can create super admin in the seeders.
 
 ```
 php artisan:migrate
+
+php artisan db:seed
 ```
-8. Run command "php artisan storage:link". We are linking public_html instead of public folder. if you want to use default public folder as root folder then go to Config/filesystem.php and replace 
+
+
+7. If you want to work with defaut "public" directory by laravel instead of "public_html" then rename and public_html to public and go to Step 8.
+ 
+ - For public_html as root directory without Laravel Mix
+ If you don't want to compile assets and also dont want to introduce other dependencies then ignore this step and Step 8 and Step 9.
+
+- For public_html as root directory with laravel mix 
+Ignore Step 8 and Follow this process after Step 9
+Copy compiled app.css and app.js from public/public_html or public/_html and repalce app.css into public_html/css/app.css and app.js into public_html/js/app.js  
+(I am loooking for fixing this issue if anyone knows please contribute)
+
+
+8. We are linking public_html instead of public folder. if you want to use default public folder as root folder then go to Config/filesystem.php and replace 
 ```
 'links' => [
         base_path('/public_html/storage') => storage_path('app/public'),
@@ -62,9 +72,30 @@ with
         public_path('/storage') => storage_path('app/public'),
     ],
 ```
-9. Login to see demo. Go to /demo to see it from views folder rather than vendors  or check laravel-filemanager/demo default demo from package.
 
-10. After Storage linking my application is working fine. You may change lmf.php 
+
+
+9. Run commands "npm install" and "npm run dev".
+```
+npm install
+```
+```
+npm run dev
+```
+or 
+```
+npm run production
+```
+
+
+10. Run command "php artisan storage:link".
+```
+php artisan storage:link
+```
+
+11. Login to see demo. Go to /demo to see it from views folder rather than vendors  or check laravel-filemanager/demo default demo from package.
+
+12. After Storage linking my application is working fine. You may change lmf.php 
  Optional - If you are using it on a server and root directory is public_html instead of public. Then go to Config/lfm.php 
 Change 'base_directory' => 'public_html'. Check configuration option on [Unisharp/filemanager/config](https://unisharp.github.io/laravel-filemanager/config).
 
