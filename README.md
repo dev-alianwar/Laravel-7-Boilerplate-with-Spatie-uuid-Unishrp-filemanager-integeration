@@ -1,13 +1,13 @@
 ## About this Boilerplate
 
-Many developer find it hard to use the following packages all together. For me it took so long fix all after watching and reading so many broken and incomplete tutorials. This boilerplate use uuid as primary key for all models instead auto-increment id. It has integeration with spatie-permissions and example can be seen in seeders.Filemanagement is an important task and unisharip/filemanager is a free a reknowned filemanage. It has a demo link on the homepage.
+Many developer find it hard to use the following packages all together. It gives you a lot for starting a new project by having three important packages pre-installed and configured . Firstly, this boilerplate uses uuid as primary key for all models instead auto-increment id. Secondly, it has integeration with spatie-permissions and example can be seen in seeders. Thirdly, it has pre-configured  unisharip/filemanager with CKEditor, TinyMCE and other editors examples is a free a reknowned filemanage. Finally, It has a demo link on the homepage.
 
-## What is different 
+## What is different? 
 - Default models to UUID as primary key auto-creation
-- Extended Models from Spatie with UUID examples
-- Migrations with UUID as primary key 
+- Extended models from Spatie with UUID examples
+- Dataabase migrations with UUID as primary key 
 - Seeders for Spatie, Permissions, Roles, Users
-- using server type of set up root folder public_html instead of public with "php artisan storage:link" configuration
+- Using server type of set up for root directory public_html instead of public with "php artisan storage:link" configuration
 - Working demo of Unisharp file manager with pdf and other type documents 
 
 
@@ -49,7 +49,9 @@ php artisan db:seed
 ```
 
 
-7. If you want to work with defaut "public" directory by laravel instead of "public_html" then rename and public_html to public and go to Step 8.
+7. Important to Read
+- For public as root directory 
+ If you want to work with defaut "public" directory by laravel instead of "public_html" then rename and public_html to public and go to Step 8.
  
  - For public_html as root directory without Laravel Mix
  If you don't want to compile assets and also dont want to introduce other dependencies then ignore this step and Step 8 and Step 9.
@@ -101,7 +103,7 @@ Change 'base_directory' => 'public_html'. Check configuration option on [Unishar
 
 
 ## Help 
-Further you can get help from these documentation links.
+Further you can get help from these documentation links or create issue on github.
 
 
 - [Spatie laravel permissions](https://github.com/spatie/laravel-permission).
