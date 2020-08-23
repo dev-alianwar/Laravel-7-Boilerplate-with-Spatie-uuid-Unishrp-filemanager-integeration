@@ -1,6 +1,6 @@
 ## About this Boilerplate
 
-Many developer find it hard to use the following packages all together. It gives you a lot for starting a new project by having three important packages pre-installed and configured . Firstly, this boilerplate uses uuid as primary key for all models instead auto-increment id. Secondly, it has integeration with spatie-permissions and example can be seen in seeders. Thirdly, it has pre-configured  unisharip/filemanager with CKEditor, TinyMCE and other editors examples is a free a reknowned filemanage. Finally, It has a demo link on the homepage.
+Many developer find it hard to use the following packages all together. It gives you a lot for starting a new project by having three important packages pre-installed and configured . Firstly, this boilerplate uses uuid as primary key for all models instead auto-increment id. Secondly, it has integeration with spatie-permissions and example can be seen in seeders. Thirdly, it has pre-configured  unisharip/filemanager with CKEditor, TinyMCE and other examples. Finally, It has a demo link on the homepage.
 
 ## What is different? 
 - Default models to UUID as primary key auto-creation
