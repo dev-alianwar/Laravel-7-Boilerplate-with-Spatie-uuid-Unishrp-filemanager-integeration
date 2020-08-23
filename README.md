@@ -33,6 +33,11 @@ php artisan key:generate
 4. Go to your .env file and configure databse settings and APP_URL
 
 5. Run these commands "composer require laravel/ui" and "php artisan ui vue --auth"
+```
+composer require laravel/ui
+
+php artisan ui vue --auth
+```
 
 6. Run commands "npm install" and "npm run dev".
 ```
