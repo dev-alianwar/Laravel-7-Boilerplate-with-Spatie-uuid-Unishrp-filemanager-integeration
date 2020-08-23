@@ -56,7 +56,7 @@ php artisan db:seed
 
 - For public_html as root directory with laravel mix 
 Ignore Step 8 and Follow this process after Step 9
-Copy compiled app.css and app.js from public/public_html or public/_html and repalce app.css into public_html/css/app.css and app.js into public_html/js/app.js  
+Copy compiled app.css and app.js from public/css and public/js and repalce app.css into public_html/css/app.css and app.js into public_html/js/app.js  
 (I am loooking for fixing this issue if anyone knows please contribute)
 
 
