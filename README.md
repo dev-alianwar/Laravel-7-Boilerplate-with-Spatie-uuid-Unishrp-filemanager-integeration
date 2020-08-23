@@ -30,7 +30,10 @@ php artisan key:generate
 
 ```
 
-4. Go to your .env file and configure databse settings and APP_URL
+4. Go to your .env file and configure database settings and APP_URL
+APP_URL is imprtant to configure for corrrect path for images uploaded by Unisharp filemanager.
+
+
 
 5. Run these commands "composer require laravel/ui" and "php artisan ui vue --auth"
 ```
@@ -100,6 +103,10 @@ php artisan storage:link
 12. After Storage linking my application is working fine. You may change lmf.php 
  Optional - If you are using it on a server and root directory is public_html instead of public. Then go to Config/lfm.php 
 Change 'base_directory' => 'public_html'. Check configuration option on [Unisharp/filemanager/config](https://unisharp.github.io/laravel-filemanager/config).
+
+
+## Give a star
+Don't forget give me star on this repository 
 
 
 ## Help 
